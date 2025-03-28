@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --shark-gray: #2d2d2d;
+    --boulder-gray: #777777;
+    --ocean-green: #4dba87;
+    --shark-black: #212121;
+    --sunset-orange: #ff4d4d;
+    --mine-shaft: #383838;
+  }
+}
+
+body {
+  background: var(--shark-black);
+  color: var(--foreground);
+  font-family: var(--font-roboto-mono), Arial, Helvetica, sans-serif;
+}
+
+textarea:focus {
+  outline-color: var(--ocean-green);
+  border-color: var(--ocean-green);
+  box-shadow: 0 0 0 2px var(--ocean-green);
+}
+
+input:focus {
+  outline-color: var(--ocean-green);
+  border-color: var(--ocean-green);
+  box-shadow: 0 0 0 2px var(--ocean-green);
+}
+
+::selection {
+  background-color: var(--ocean-green);
+  color: var(--background);
+}
+
+/* For Firefox */
+::-moz-selection {
+  background-color: var(--ocean-green);
+  color: var(--background);
+}
