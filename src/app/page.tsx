@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <div className="justify-center items-center flex flex-col min-h-screen">
-      <Image src="/wok.svg" alt="WOK" height={400} width={400} />
+      <Image src="/wok.svg" alt="WOK" height={260} width={260} />
       <h1 className="text-3xl">Gurivé</h1>
       <p className="text-base text-center my-6 mb-16">
         The Best Fresh Food delivered
