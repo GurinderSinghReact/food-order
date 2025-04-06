@@ -9,10 +9,10 @@ export interface Drink {
 
 const DrinkList = ({
   drinks,
-  onClick,
+  // onClick,
 }: {
   drinks: Drink[];
-  onClick: (drink: Drink, type: "increase" | "decrease") => void;
+  // onClick: (drink: Drink, type: "increase" | "decrease") => void;
 }) => {
   return (
     <div className="max-w-md mx-auto p-4">
@@ -31,7 +31,7 @@ const DrinkList = ({
             </h3>
             <p className="text-gray-500 text-sm">{drink.description}</p>
           </div>
-          {drink.quantity > 0 ? (
+          {/* {drink.quantity > 0 ? (
             <div className="bg-[var(--ocean-green)] rounded-full justify-center items-center flex flex-col">
               <button
                 className="w-10 h-10 bg-[var(--ocean-green)] text-black rounded-full text-3xl flex items-center justify-center"
@@ -56,7 +56,7 @@ const DrinkList = ({
             >
               +
             </button>
-          )}
+          )} */}
         </div>
       ))}
     </div>

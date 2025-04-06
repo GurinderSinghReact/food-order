@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import DrinkList, { Drink } from "@/components/DrinkList";
 import HorizontalCategoryList from "@/components/HorizontalCategoryList";
@@ -12,29 +13,19 @@ type DrinkItem = {
   quantity: number;
 };
 
-const categories = [
-  "Desi Fusion Coolers",
-  "Mojitos",
-  "Smoothie",
-  "Floats",
-  "Soft Drinks",
-] as const;
+const categories = ["Desi Fusion Coolers", "Mojitos", "Hot Drinks"] as const;
 
 const categoryKeyMap = {
   "Desi Fusion Coolers": "Desi_Fusion_Coolers",
   Mojitos: "Mojitos",
-  Smoothie: "Smoothie",
-  Floats: "Floats",
-  "Soft Drinks": "Soft_Drinks",
+  "Hot Drinks": "Hot_Drinks",
 } as const;
 
 // Default drink list structure
 const defaultDrinkList = {
   Desi_Fusion_Coolers: [],
   Mojitos: [],
-  Smoothie: [],
-  Floats: [],
-  Soft_Drinks: [],
+  Hot_Drinks: [],
 };
 
 function Category() {
@@ -165,7 +156,10 @@ function Category() {
 
       {/* Scrollable Drink List, pushed down by header */}
       <div className="flex-1 overflow-y-auto pt-[200px] px-4">
-        <DrinkList drinks={drinkList} onClick={upDateDrinkList} />
+        <DrinkList
+          drinks={drinkList}
+          // onClick={upDateDrinkList}
+        />
       </div>
       {totalDrinks > 0 && (
         <div className="bg-[var(--ocean-green)] text-black font-bold p-6 text-sm flex justify-center items-center">

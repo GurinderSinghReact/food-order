@@ -7,8 +7,9 @@ export type DrinkItem = {
 
 export const Desi_Fusion_Coolers: DrinkItem[] = [
   {
-    name: "Paan Day",
-    description: "Beetel Leaves, Gulkand, Soda",
+    name: "Rose Paan Spritzer",
+    description:
+      "Betel leaves (paan), rose syrup, fresh mint, lemon juice, soda, black salt, ice",
     image: "/paanDay.webp",
     quantity: 0,
   },
@@ -30,12 +31,6 @@ export const Desi_Fusion_Coolers: DrinkItem[] = [
     image: "/anardanaShikanji.webp",
     quantity: 0,
   },
-  {
-    name: "Masala Coke",
-    description: "Coca-Cola, Mint, Lemon, Black Salt, Chaat Masala",
-    image: "/masalaCoke.webp",
-    quantity: 0,
-  },
 ];
 
 export const Mojitos: DrinkItem[] = [
@@ -43,12 +38,6 @@ export const Mojitos: DrinkItem[] = [
     name: "Classic Mint Mojito",
     description: "Mint, Lime, Sugar, Soda",
     image: "/mintMojito.webp",
-    quantity: 0,
-  },
-  {
-    name: "Strawberry Bliss Mojito",
-    description: "Strawberry, Mint, Lime, Sugar, Soda",
-    image: "/strawberryMojito.webp",
     quantity: 0,
   },
   {
@@ -64,97 +53,75 @@ export const Mojitos: DrinkItem[] = [
     quantity: 0,
   },
   {
-    name: "Watermelon Wave Mojito",
-    description: "Watermelon, Mint, Lime, Sugar, Soda",
-    image: "/watermelonMojito.webp",
+    name: "Classic Black Mojito",
+    description: "Coca-Cola, Mint, Lemon, Black Salt, Chaat Masala",
+    image: "/masalaCoke.webp",
     quantity: 0,
   },
 ];
 
-export const Smoothie: DrinkItem[] = [
+export const Hot_Drinks: DrinkItem[] = [
   {
-    name: "Mango Magic",
-    description: "Mango, Banana, Yogurt, Honey, Milk",
-    image: "/aperol-spritz.png",
+    name: "Masala Chai",
+    description: "Black Tea, Ginger, Cardamom, Cloves, Milk, Sugar",
+    image: "/chaicup__large.jpg",
     quantity: 0,
   },
   {
-    name: "Berry Blast",
-    description: "Strawberries, Blueberries, Raspberries, Banana, Milk",
-    image: "/mojito.png",
+    name: "Hot Coffee",
+    description: "Coffee Beans, Hot Water, Milk, Sugar (optional)",
+    image: "/coffee.avif",
     quantity: 0,
   },
   {
-    name: "Tropical Paradise",
-    description: "Pineapple, Banana, Mango, Coconut Milk",
-    image: "/sex-on-the-beach.png",
-    quantity: 0,
-  },
-  {
-    name: "Strawberry Cheesecake",
-    description: "Strawberries, Greek Yogurt, Oats, Honey, Vanilla",
-    image: "/manhattan.png",
+    name: "Hot Chocolate",
+    description: "Cocoa Powder, Milk, Sugar, Vanilla Extract",
+    image: "/hot_chocolate.jpg",
     quantity: 0,
   },
 ];
 
-export const Floats: DrinkItem[] = [
+export const snacksList: DrinkItem[] = [
   {
-    name: "Classic Coke Float",
-    description: "Coca-Cola, Vanilla Ice Cream",
-    image: "/aperol-spritz.png",
+    name: "Golden Catch – Amritsari Style (Veg)",
+    description:
+      "Soy-based mock fish, chickpea flour, ajwain, carom seeds, ginger-garlic paste, Amritsari spices, lemon juice",
+    image: "/Spicy-And-Tangy-Amritsari-Fish.webp",
     quantity: 0,
   },
   {
-    name: "Pepsi Choco Blast",
-    description: "Pepsi, Chocolate Ice Cream",
-    image: "/mojito.png",
+    name: "Corn Crunch Carnival",
+    description:
+      "Crispy golden corn, garlic, green chilies, spring onions, chaat masala, a dash of lemon",
+    image: "/crispy_corn.jpeg",
     quantity: 0,
   },
   {
-    name: "Tropical Creamsicle",
-    description: "Orange Soda, Vanilla Ice Cream",
-    image: "/mojito.png",
+    name: "Nacho Volcano Platter",
+    description:
+      "Tortilla chips, cheese sauce, jalapeños, olives, salsa, sour cream, guacamole, beans",
+    image: "/nachos.jpg",
     quantity: 0,
   },
   {
-    name: "Lemon Fizz Delight",
-    description: "Sprite, Lemon Sorbet",
-    image: "/mojito.png",
+    name: "Classic Fries with a Twist",
+    description:
+      "Potato fries, peri-peri seasoning, cheddar drizzle, parsley flakes, garlic aioli",
+    image: "/fries.jpeg",
     quantity: 0,
   },
   {
-    name: "Mango Melody",
-    description: "Limca, Mango Ice Cream",
-    image: "/mojito.png",
-    quantity: 0,
-  },
-];
-
-export const Soft_Drinks: DrinkItem[] = [
-  {
-    name: "Coke",
-    image: "/aperol-spritz.png",
+    name: "Steamy Pockets of Joy",
+    description:
+      "Assorted veggie stuffing, thin flour wrappers, soy sauce, garlic, ginger, spring onions",
+    image: "/momos.jpg",
     quantity: 0,
   },
   {
-    name: "Pepsi",
-    image: "/mojito.png",
-    quantity: 0,
-  },
-  {
-    name: "Limca",
-    image: "/mojito.png",
-    quantity: 0,
-  },
-  {
-    name: "Sprite",
-    image: "/mojito.png",
-    quantity: 0,
-  },
-  {
-    name: "Mirinda",
-    image: "/mojito.png",
+    name: "Cheesy Pizza Bombs",
+    description:
+      "Mini pizza dough, mozzarella cheese, bell peppers, pizza sauce, oregano, chili flakes",
+    image: "/pizza.jpeg",
     quantity: 0,
   },
 ];

@@ -1,13 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React from "react";
 
-const categories = [
-  "Desi Fusion Coolers",
-  "Mojitos",
-  "Smoothie",
-  "Floats",
-  "Soft Drinks",
-] as const;
+const categories = ["Desi Fusion Coolers", "Mojitos", "Hot Drinks"] as const;
 
 // Create a type from the categories
 type Category = (typeof categories)[number];
